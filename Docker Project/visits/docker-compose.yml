@@ -1,0 +1,10 @@
+version: '3'
+services:
+  redis_db:
+     image:  "redis"     
+  node_app:
+    build: ./
+    image: roshni1/visits
+    ports:
+      - "8081:8081"
+      
